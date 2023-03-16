@@ -1,0 +1,1 @@
+#App that manages the internships in a company
