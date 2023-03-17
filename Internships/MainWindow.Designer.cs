@@ -38,24 +38,26 @@ namespace Internships
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(156, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(177, 39);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(544, 242);
+            this.dataGridView1.Size = new System.Drawing.Size(484, 295);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(273, 374);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(323, 36);
             this.button1.TabIndex = 1;
-            this.button1.Text = "refresh";
+            this.button1.Text = "Add Employee";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
