@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Internships
 {
@@ -38,23 +39,21 @@ namespace Internships
             }
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        { 
-            var row = e.RowIndex;
-            var info = dataGridView1.Rows[row].Cells[0].Value;
-            var window = new EmployeeWindow(Convert.ToInt32(info.ToString()));
-            window.Show();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                adapter.SelectCommand.Connection = connection;
-                dataGridView1.DataSource = ds.Tables["Teams"];
-                ds.Tables["Teams"].Clear();
-                adapter.Fill(ds, "Teams");
+                var teamId = Convert.ToInt32(this.dataGridView1.CurrentRow.Cells[0].Value);
+                RegisterEmployee window = new RegisterEmployee(teamId);
+                window.Show();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var teamId = Convert.ToInt32(this.dataGridView1.CurrentRow.Cells[0].Value);
+            var window = new EmployeeWindow(teamId);
+            window.Show();
         }
     }
 }

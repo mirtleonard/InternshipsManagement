@@ -78,3 +78,4 @@ C:\Users\mirtg\Documents\facultate\an2\sem2\SGDB\Internships\Internships\bin\Deb
 C:\Users\mirtg\Documents\facultate\an2\sem2\SGDB\Internships\Internships\obj\Debug\Internships.csproj.CopyComplete
 C:\Users\mirtg\Documents\facultate\an2\sem2\SGDB\Internships\Internships\obj\Debug\Internships.MainWindow.resources
 C:\Users\mirtg\Documents\facultate\an2\sem2\SGDB\Internships\Internships\obj\Debug\Internships.EmployeeWindow.resources
+C:\Users\mirtg\Documents\facultate\an2\sem2\SGDB\Internships\Internships\obj\Debug\Internships.RegisterEmployee.resources
